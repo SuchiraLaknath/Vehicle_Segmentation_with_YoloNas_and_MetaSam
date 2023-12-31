@@ -1,4 +1,5 @@
 checkpoints/*
+!checkpoints/.gitkeep 
 data/*
 runs
 yolo_nas_weights/*
