@@ -1,6 +1,8 @@
 checkpoints/*
 !checkpoints/.gitkeep 
 data/*
+!data/.gitkeep
 runs
 yolo_nas_weights/*
+!yolo_nas_weights/.gitkeep
 *__pycache__
