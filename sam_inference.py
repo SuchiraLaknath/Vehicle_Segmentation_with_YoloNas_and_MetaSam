@@ -70,7 +70,7 @@ class SamSegmentation:
 
 if __name__ == "__main__":
     yolo = YoloPrediction()
-    image = cv2.imread("data/download (1).jpeg")
+    image = cv2.imread("data/cab_cars_street_urban_city-1409810.jpg")
     image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     list_of_boxes = yolo.predict_image(image= image)
     

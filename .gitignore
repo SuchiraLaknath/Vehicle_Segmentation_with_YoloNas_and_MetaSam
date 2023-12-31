@@ -1,5 +1,5 @@
-checkpoints/*
-data/*
-runs/*
-yolo_nas_weights/*
-__pycache__
+checkpoints/**
+data/**
+runs/**
+yolo_nas_weights/
+*__pycache__
