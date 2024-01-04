@@ -6,3 +6,4 @@ runs
 yolo_nas_weights/*
 !yolo_nas_weights/.gitkeep
 *__pycache__
+Vehicles-OpenImages-1
