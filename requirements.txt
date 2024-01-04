@@ -1,0 +1,7 @@
+git+https://github.com/facebookresearch/segment-anything.git
+numpy = 1.23.0
+opencv-python=4.9.0.80
+opencv-contrib-python=4.9.0.80
+ipykernel = 6.27.1
+super-gradients = 3.5.0
+roboflow = 1.1.14

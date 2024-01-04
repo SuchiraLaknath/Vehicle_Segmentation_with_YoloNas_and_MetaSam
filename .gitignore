@@ -2,6 +2,7 @@ checkpoints/*
 !checkpoints/.gitkeep 
 data/*
 !data/.gitkeep
+!data/cab_cars_street_urban_city-1409810.jpg
 runs
 yolo_nas_weights/*
 !yolo_nas_weights/.gitkeep

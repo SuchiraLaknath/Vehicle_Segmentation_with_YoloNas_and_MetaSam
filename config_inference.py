@@ -1,3 +1,4 @@
+image_path = "data/cab_cars_street_urban_city-1409810.jpg"
 vehicle_list = ["car", "bus", "bicycle", "motorbike", "traffic light", "person", "truck"]
 vehicle_color_dict = {
     "car": (255,51,51),

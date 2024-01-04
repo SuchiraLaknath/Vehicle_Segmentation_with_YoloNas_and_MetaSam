@@ -45,7 +45,7 @@ class YoloPrediction:
         return torch.device("cuda" if torch.cuda.is_available() else "cpu")
     
     def load_model(self, model_name = "yolo_nas_s", pretrained_weights = "coco", device = "cpu"):
-        return models.get(model_name=model_name, pretrained_weights= pretrained_weights).to(device=device)
+        return models.get(model_name= model_name, pretrained_weights= pretrained_weights).to(device=device)
     
     def predict_image(self, image, model = None , conf = 0.5):
         image_copy = image.copy()
@@ -55,9 +55,15 @@ class YoloPrediction:
         list_of_bboxs = self.post_process_results(yolo_out=yolo_out)
         return list_of_bboxs
         
-
-if __name__ == "__main__":
+def testing_function():
+    """
+    This function is only for testing
+    """
+    print("test function is called")
     yolo = YoloPrediction()
     image = cv2.imread("data/cd2e47a9c2e1a74998eb66f92711de0c.webp")
     list_of_boxes = yolo.predict_image(image= image)
     print(list_of_boxes)
+
+if __name__ == "__main__":
+    testing_function()

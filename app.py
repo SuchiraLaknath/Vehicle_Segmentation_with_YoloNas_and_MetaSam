@@ -2,11 +2,12 @@ from sam_inference import SamSegmentation
 from yolo_nas import YoloPrediction
 import cv2
 import numpy as np
+import config_inference
 
 
 def main():
     yolo = YoloPrediction()
-    image = cv2.imread("data/cab_cars_street_urban_city-1409810.jpg")
+    image = cv2.imread(config_inference.image_path)
     image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     list_of_boxes = yolo.predict_image(image= image)
 
